@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heat Street</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <img src="images/header01.png" alt="" id="coverimage" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="menumild.html">MENU</a>
+      <a href="products.php">PRODUCTS</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <img src="images/saucedbanner.png" alt="" id="saucedbanner" />
+
+    <div id="welcome" class="col-6">
+      Join us and take the leap to flavor town. Is SPICE your middle name? Is
+      braving the HEAT your game?<br />
+      Take a peak at our menu, we are open 7 days a week and are always ready
+      and willing to burn your face off.<br />
+      We tailor our menu so that you know exactly what type of heat your getting
+      with your meal.<br />
+      Just want a small brush with the fire? Try out our Ground Beef Tacos. I'll
+      bet you can't eat just one!<br />
+      Ready to a take a trip to the burn unit? Get a load of our Hotter than Hot
+      Wings!<br />
+      Any day of the week, we are here to ignite your taste buds and make you
+      feel alive!
+    </div>
+    <div id="specialsrow">
+      <div class="row1">
+        <div class="specialscard col-2">
+          Sunday<br />
+          <img
+            src="images/specials/caesar.jpg"
+            alt="caesardrink"
+            class="specialimg"
+          />
+          BOGO Heat Street Caesars
+        </div>
+        <div class="specialscard col-2">
+          Monday<br />
+          <img src="images/specials/wings.jpg" alt="wings" class="specialimg" />
+          1/2 Priced Wings<br />$7.99
+        </div>
+      </div>
+      <div class="row1">
+        <div class="specialscard col-2">
+          Tuesday<br />
+          <img
+            src="images/specials/2dine.jpg"
+            alt="2candine"
+            class="specialimg"
+          />
+          2 Can Dine<br />
+          $29.99
+        </div>
+        <div class="specialscard col-2">
+          Wednesday<br />
+          <img
+            src="images/specials/openmic.jpg"
+            alt="openmicnight"
+            class="specialimg"
+          />
+          Open Mic Night<br />8pm-11pm
+        </div>
+      </div>
+    </div>
+    <img src="images/spicemenu.png" alt="" class="spicemenu" />
+    <div id="spicemenuoptions">
+      <a href="menumild.html">
+        <img
+          src="images/SpiceLevel/low.png"
+          onMouseOver="this.src='images/SpiceLevel/MildMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/low.png'"
+        />
+      </a>
+      <a href="menumedium.html"
+        ><img
+          src="images/SpiceLevel/medium.png"
+          onMouseOver="this.src='images/SpiceLevel/MediumMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/medium.png'"
+        />
+      </a>
+      <a href="menuhot.html">
+        <img
+          src="images/SpiceLevel/Hot.png"
+          onMouseOver="this.src='images/SpiceLevel/HotMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/Hot.png'"
+      /></a>
+    </div>
+
+    <div class="footer">
+      <p>&copy; Andrew Dinsmore 2022</p>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

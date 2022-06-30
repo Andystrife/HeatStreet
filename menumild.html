@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heat Street</title>
+    <link rel="stylesheet" href="style-menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <img src="images/header02.png" alt="" id="coverimage" />
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="menumild.html">MENU</a>
+      <a href="products.php">PRODUCTS</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <img src="images/spicemenu.png" alt="" class="spicemenu" />
+
+    <div id="spicemenuoptions">
+      <a href="menumild.html">
+        <img
+          src="images/SpiceLevel/low.png"
+          onMouseOver="this.src='images/SpiceLevel/MildMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/low.png'"
+        />
+      </a>
+      <a href="menumedium.html"
+        ><img
+          src="images/SpiceLevel/mediumdark.png"
+          onMouseOver="this.src='images/SpiceLevel/MediumMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/mediumdark.png'"
+        />
+      </a>
+      <a href="menuhot.html">
+        <img
+          src="images/SpiceLevel/Hotdark.png"
+          onMouseOver="this.src='images/SpiceLevel/HotMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/Hotdark.png'"
+      /></a>
+    </div>
+
+    <div class="container col-6">
+      <div class="picleft">
+        <img src="images/MildMenu/CaesarSalad.jpg" class="imgleft" />
+
+        <h3>Tangy Chicken Caesar Salad<span class="price"> $15.99</span></h3>
+        <p class="desc_left">
+          Fresh butterflied chicken breast marinated in our house Mild Sauce.
+          Crispy romaine lettuce served with a garlic Caesar dressing and topped
+          with blistered cherry tomatoes, Parmesan cheese, croutons and bacon
+          bits.<br />
+        </p>
+      </div>
+
+      <div class="picright">
+        <img class="imgright" src="images/MildMenu/taco.jpg" />
+
+        <h3 class="header_left">
+          Ground Beef Tacos (4)<span class="price"> $11.99 or $3 each</span>
+        </h3>
+        <p class="desc_right">
+          Seasoned ground beef piled high with pico de gallo, lettuce, cheese,
+          and cilantro. Give it an extra punch with a squeeze of lime! Top it
+          all with our creamy mild taco sauce to enjoy a small kick right in the
+          taste buds!
+        </p>
+      </div>
+
+      <div class="picleft">
+        <img class="imgleft" src="images/MildMenu/salmon.jpg" />
+
+        <h3>Blackened Salmon<span class="price"> $15.99</span></h3>
+        <p class="desc_left">
+          Seared 6oz Atlantic Salmon with a house blend Blackening Spice.Topped
+          with a zesty mango salsa which incorporates our famous Mild Hot Sauce.
+          Served with rice pilaf and your choice of garden vegetables or side
+          salad.
+        </p>
+      </div>
+
+      <div class="picright">
+        <img class="imgright" src="images/MildMenu/burger.jpg" />
+
+        <h3 class="header_left">
+          Sweet Heat Salsa Burger<span class="price">$12.99</span>
+        </h3>
+        <p class="desc_right">
+          Hand-crafted with local lean ground beef, our burgers are flavoured
+          with smoked paprika, garlic, and infused with our Mild Hot Sauce, all
+          topped with a warming chili and tomato salsa. Served on an ACE Bakery
+          Bun.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; Andrew Dinsmore 2022</p>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

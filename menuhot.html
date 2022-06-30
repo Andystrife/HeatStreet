@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heat Street</title>
+    <link rel="stylesheet" href="style-menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <img src="images/header02.png" alt="" id="coverimage" />
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="menumild.html">MENU</a>
+      <a href="products.php">PRODUCTS</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <img src="images/spicemenu.png" alt="" class="spicemenu" />
+
+    <div id="spicemenuoptions">
+      <a href="menumild.html">
+        <img
+          src="images/SpiceLevel/lowdark.png"
+          onMouseOver="this.src='images/SpiceLevel/MildMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/lowdark.png'"
+        />
+      </a>
+      <a href="menumedium.html"
+        ><img
+          src="images/SpiceLevel/mediumdark.png"
+          onMouseOver="this.src='images/SpiceLevel/MediumMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/mediumdark.png'"
+        />
+      </a>
+      <a href="menuhot.html">
+        <img
+          src="images/SpiceLevel/Hot.png"
+          onMouseOver="this.src='images/SpiceLevel/HotMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/Hot.png'"
+      /></a>
+    </div>
+
+    <div class="container col-6">
+      <div class="picleft">
+        <img class="imgleft" src="images/HotMenu/chili.jpg" />
+        <h3>Hot and Wild Beef Chil<span class="price"> $11.99</span></h3>
+        <p class="desc_left">
+          Ground beef slow cooked with San Marzano tomatoes, fresh peppers, and
+          our famous southern spice blend. We kick it up by adding our mouth
+          numbing hot sauce. Comes with house corn bread and a dollop of sour
+          cream!
+        </p>
+      </div>
+
+      <div class="picright">
+        <img class="imgright" src="images/HotMenu/jambalaya.jpg" />
+        <h3 class="header_left header_left_long">
+          Kickin' Chicken, Shrimp, and Sausage Jambalaya<span class="price">
+            $15.99</span
+          >
+        </h3>
+        <p class="desc_right">
+          Taste New Orleans with our spicy take on a southern classic. Peppers,
+          onion, and celery browned with tomato. We use our famous Blackening
+          and add our special hot sauce while cooking so that every rice grain
+          has a kick!
+        </p>
+      </div>
+
+      <div class="picleft">
+        <img class="imgleft" src="images/HotMenu/mapo.jpg" />
+        <h3>Mapo Tofu<span class="price"> $15.99</span></h3>
+        <p class="desc_left">
+          This mapo tofu recipe is the true blue, authentic real deal. The
+          spicy, tongue-numbing, nature of this dish is absolutely not
+          optional.There may be tofu in this dish, but there is also ground pork
+          and TONS of chili's. Comes with steamed rice!
+        </p>
+      </div>
+
+      <div class="picright">
+        <img class="imgright" src="images/HotMenu/wings.jpg" />
+        <h3 class="header_left">
+          Hotter than Hot, Hot Wings<span class="price"> $15.99</span>
+        </h3>
+        <p class="desc_right">
+          You can't be a restaurant that specializes in hot sauces and not serve
+          wings!We do offer mild wings, but the real star of the show is our
+          "Hotter than Hot, Hot Wings"! These wings will have you chugging a
+          tall cold one to beat the heat!
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; Andrew Dinsmore 2022</p>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

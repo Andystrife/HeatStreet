@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heat Street</title>
+    <link rel="stylesheet" href="style-menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <img src="images/header02.png" alt="" id="coverimage" />
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="menumild.html">MENU</a>
+      <a href="products.php">PRODUCTS</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <img src="images/spicemenu.png" alt="" class="spicemenu" />
+
+    <div id="spicemenuoptions">
+      <a href="menumild.html">
+        <img
+          src="images/SpiceLevel/lowdark.png"
+          onMouseOver="this.src='images/SpiceLevel/MildMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/lowdark.png'"
+        />
+      </a>
+      <a href="menumedium.html"
+        ><img
+          src="images/SpiceLevel/medium.png"
+          onMouseOver="this.src='images/SpiceLevel/MediumMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/medium.png'"
+        />
+      </a>
+      <a href="menuhot.html">
+        <img
+          src="images/SpiceLevel/Hotdark.png"
+          onMouseOver="this.src='images/SpiceLevel/HotMonsterlabel.png'"
+          onMouseOut="this.src='images/SpiceLevel/Hotdark.png'"
+      /></a>
+    </div>
+
+    <div class="container col-6">
+      <div class="picleft">
+        <img class="imgleft" src="images/MediumMenu/buffalochicken.jpg" />
+        <h3>Buffalo Chicken Sandwich<span class="price"> $15.99</span></h3>
+        <p class="desc_left">
+          Dive in to our oh so crispy Buffalo Chicken Sandwich. Marinated in our
+          signature medium sauce, fried to perfection. Topped with Boston bib
+          lettuce, dill pickles, and our spicy mayo you'll wish you had room for
+          another!
+        </p>
+      </div>
+
+      <div class="picright">
+        <img class="imgright" src="images/MediumMenu/beeffajita.jpg" />
+        <h3 class="header_left">
+          Beef Fajita <span class="price"> $18.99</span>
+        </h3>
+        <p class="desc_right">
+          Our traditional wood-fire grilled skirt steak, basted and seasoned
+          with our signature medium sauce. With the fresh addition of red and
+          orange peppers and grilled onions, you can pile it high on our in
+          house made tortilla shells.
+        </p>
+      </div>
+
+      <div class="picleft">
+        <img class="imgleft" src="images/MediumMenu/eggplant.jpg" />
+        <h3>Sweet Chili Thai Eggplant<span class="price"> $15.99</span></h3>
+        <p class="desc_left">
+          Fresh and spicy stir-fried eggplant with a hint of sweetness. Tasty
+          and healthy without the meat! Sliced eggplant, sweet peppers, onion,
+          Thai basil, garlic, stir-fried in our spicy basil sauce. Enjoy this
+          with a side of coconut rice.
+        </p>
+      </div>
+
+      <div class="picright">
+        <img class="imgright" src="images/MediumMenu/bangbangshrimp.jpg" />
+        <h3 class="header_left">
+          Bang Bang Shrimp Bowl<span class="price"> $12.99</span>
+        </h3>
+        <p class="desc_right">
+          A Spicy Thai Dish with the Flavors of Curry, Peanut, Chile and
+          Coconut.Sauteed with Vegetables and Served over Steamed White Rice.We
+          use our signature medium sauce to marinate the shrimp before breading
+          and frying.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; Andrew Dinsmore 2022</p>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
